@@ -1,9 +1,9 @@
-class Workd(object):
+class World(object):
 
     def __init__(self):
 
-        self.entities = {} # Store all the entities
-        self.entity_id = 0 # Last entity id assigned
+        self.entities = {}  # Store all the entities
+        self.entity_id = 0  # Last entity id assigned
         # Draw the nest (a circle) on the background
         self.background = pygame.surface.Surface(SCREEN_SIZE).convert()
         self.background.fill((255, 255, 255))

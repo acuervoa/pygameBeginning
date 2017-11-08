@@ -1,3 +1,6 @@
+import GameEntity
+
+
 class Ant(GameEntity):
 
     def __init__(self, world, image):
