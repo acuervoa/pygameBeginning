@@ -11,6 +11,7 @@ class Star(object):
         self.y = y
         self.speed = speed
 
+
 def run():
 
     pygame.init()
@@ -53,7 +54,10 @@ def run():
         for star in stars:
 
             new_x = star.x - time_passed_seconds * star.speed
-            pygame.draw.aaline(screen, white, (new_x, star.y), (star.x+1., star.y))
+            pygame.draw.aaline(screen,
+                               white,
+                               (new_x, star.y),
+                               (star.x+1., star.y))
             star.x = new_x
 
         def on_screen(star):
